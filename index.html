@@ -2,18 +2,23 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="scripts.js"></script>
         <title>PB</title>
     </head>
     <body>
         <img class="logo" src="./images/pb-logo.png" alt="pb logo">
-        <nav class="menu-bar">
-            <ul class="menu">
-                <li class="menu-item"><a href=#>about me</a></li>
-                <li class="menu-item"><a href=#>recent projects</a>
-                <li class="menu-item"><a href=#>skills</a></li>
-                <li class="menu-item"><a href="./pages/contact.html">get in touch</a></li>
-            </ul>
-        </nav>
+        <div class="collapsible-menu">
+            <input type="checkbox" id="menu">
+            <label for="menu">. . .</label>
+            <nav class="menu-content">
+                <ul class="menu">
+                    <li class="menu-item"><a href=#>about me</a></li>
+                    <li class="menu-item"><a href=#>recent projects</a>
+                    <li class="menu-item"><a href=#>skills</a></li>
+                    <li class="menu-item"><a href="./pages/contact.html">get in touch</a></li>
+                </ul>
+            </nav>
+        </div>
         <header>
             <h1>PB Developer</h1>
         </header>

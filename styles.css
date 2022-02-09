@@ -3,19 +3,66 @@
     color: darkblue;
 }
 
+.logo {
+    position: absolute;
+    width: 250px;
+}
 
-/* nav bar across top of page...using a grid */
+/*expanding nav bar */
+.menu-content {
+    font-weight:300;
+    padding: 0 0 0 50px;
+    text-align:right;
+}
+
+.collapsible-menu {
+    padding: 20px 0px 20px 0px;
+}
+/* no bullet points */
+.collapsible-menu ul{
+    list-style-type: none;
+}
+/* menu to list block instead of inline with some spacing and no underlines */
+.collapsible-menu a{
+    display:block;
+    padding: 5px 15px 5px 0px;
+    text-decoration: none;
+}
+
+.collapsible-menu label{
+    display:block;
+    text-align: right;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight:900;
+    padding: 10px 0px 10px 0px;
+}
+
+/* don't display the checkbox */
+input#menu {
+     display:none; 
+}
+/* default: hide the menu container */
+.menu-content {
+    max-height:0;
+    overflow: hidden;
+}
+
+.menu-content a:hover {
+    background-color:lightblue;
+}
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
+
+/* nav bar across top of page...using a grid 
 .menu-bar{
     display: grid;
     grid-template-columns: 200px 1fr 200px;
     
 }
 
-.menu-bar img {
-    grid-column: 1/2;
-    width: 80%;
-    margin: 30px 20px 20px 20px;
-}
 
 .menu {
     margin: 0px;
@@ -45,6 +92,7 @@
 .menu-item:hover{
     background-color: lightblue; 
 }
+*/
 
 /* recent projects */
 .projects {
